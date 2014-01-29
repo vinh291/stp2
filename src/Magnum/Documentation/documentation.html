@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<head>
+<meta charset="utf-8">
+<title>PixelStuff Documentation - Magnum</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/grid.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/documentation.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--<link rel="shortcut icon" href="img/favicon/favicon.ico">-->
+</head>
+<body>
+
+	<header class="top">
+		<div class="row">
+			<div class="twelve columns">
+				<a href="#"><img class="logo" src="assets/images/pixelstuff.png" alt="pixelstuff" width="98" height="44"></a>
+				<div class="topright">
+					<a href="#need-help"><i class="support-icon fa fa-envelope-o"></i></a>
+					<a href="javascript:void(0);"><i class="fa fa-bars toggle"></i></a>
+					<a href="javascript:void(0);"><i class="fa fa-times hidetoggle"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="menu hidden">	
+		<div class="row">
+			<div class="four columns medium-four columns">
+				<h3><a href="#getting-started">Getting started</a></h3>
+				<ul>
+					<li><a href="#text-editor">Using a text-editor</a></li>
+					<li><a href="#robots">The robots tag</a></li>
+					<li><a href="#choose-index">Choosing an index file</a></li>
+					<li><a href="#setup-index-file">Setting up the index file</a></li>
+					<li><a href="#video-settings">Video settings</a></li>
+					<li><a href="#contact-form">Setting up the contact form</a></li>
+				</ul>
+			</div>
+
+			<div class="four columns medium-four columns">
+				<h3><a href="#typography">Typography</a></h3>
+				<ul>
+					<li><a href="#change-text">How to change text</a></li>
+					<li><a href="#change-font">How to change the font</a></li>
+					<li><a href="#google-fonts">Using Google Webfonts</a></li>
+					<li><a href="#serif-class">Using the serif class</a></li>
+					<li><a href="#uppercase-class">Using the uppercase class</a></li>
+					<li><a href="#align-text">How to align text</a></li>
+					<li><a href="#fittext">Fit text to the screen</a></li>
+					<li><a href="#margins">Using margins</a></li>
+				</ul>
+			</div>
+
+			<div class="four columns medium-four columns">
+				<h3><a href="#links-buttons-icons">Links, Buttons &amp; Icons</a></h3>
+				<ul>
+					<li><a href="#create-link">How to create a link</a></li>
+					<li><a href="#link-to-point">How to link to a specific point in your file</a></li>
+					<li><a href="#create-icon">How to create an icon</a></li>
+					<li><a href="#create-button">How to create a button</a></li>
+					<li><a href="#icon-inside-button">Adding an icon inside a button</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns medium-four columns">
+				<h3><a href="#colors">Colors</a></h3>
+				<ul>
+					<li><a href="#main-color">How to choose the main color of your site</a></li>
+					<li><a href="#customize-color">How to customize the main color</a></li>
+					<li><a href="#span-colors">How to use span colors</a></li>
+					<li><a href="#text-background-colors">How to use text background colors</a></li>
+					<li><a href="#background-color">How to set the background color of a section</a></li>
+				</ul>
+			</div>
+
+			<div class="four columns medium-four columns">
+				<h3><a href="#media">Media</a></h3>
+				<ul>
+					<li><a href="#display-image">How to display an image</a></li>
+					<li><a href="#your-logo">Your logo</a></li>
+					<li><a href="#image-sizes">Image sizes</a></li>
+					<li><a href="#circle-images">How to create circle images</a></li>
+					<li><a href="#background-images">How to create a background</a></li>
+					<li><a href="#popup">How to display a popup</a></li>
+					<li><a href="#sliders">How to configure a slider</a></li>
+				</ul>
+			</div>
+
+			<div class="four columns medium-four columns">
+				<h3><a href="#the-grid">The grid</a></h3>
+				<ul>
+					<li><a href="#the-grid">How to use the grid</a></li>
+					<li><a href="#offset-grid">Offsets in the grid</a></li>
+					<li><a href="#center-grid">Centering the grid</a></li>
+					<li><a href="#responsive-control">More responsive control</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns medium-four columns">
+				<h3><a href="#other-settings">Other settings</a></h3>
+				<ul>
+					<li><a href="#project-page">Project page</a></li>
+					<li><a href="#404-page">404 page</a></li>
+					<li><a href="#custom-title">Custom title settings</a></li>
+					<li><a href="#transparent-background">Transparent background</a></li>
+				</ul>
+			</div>
+
+			<div class="four columns medium-four columns">
+				<h3><a href="#other-settings">Other settings</a></h3>
+				<ul>
+					<li><a href="#menu-colours">Menu colours</a></li>
+					<li><a href="#footer-styles">Footer styles</a></li>
+					<li><a href="#smoothscroll">Smooth scroll</a></li>
+				</ul>
+			</div>
+
+			<div class="four columns medium-four columns">
+				<h3><a href="#general-information">General information</a></h3>
+				<ul>
+					<li><a href="#need-help">Need help?</a></li>
+					<li><a href="#report-a-bug">Report a bug</a></li>
+					<li><a href="#credits">Credits</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<!-- Hello -->
+	<section id="hello">
+		<div class="row">
+			<div class="twelve columns">
+				<h1 class="bigger">Hello!</h1>
+				<hr>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="nine columns">
+				<h3>Thank you for buying Magnum!</h3>
+				<p>This document will guide you through the setup process of this template. In the menu above you'll find some tutorials to get you started with Magnum. If you have questions about anything about this template that isn't covered in this documentation, please <a href="mailto:pixelstuff.net@gmail.com">send me an e-mail</a>.</p>
+				<p>Have fun with your new template and thanks again for buying!</p>
+				<h5 class="margin-bottom">Cheers!<br>
+				PixelStuff</h5>
+				<p class="small">Magnum v1.0.4<br>
+				<a href="http://www.pixelstuff.net" target="blank">www.pixelstuff.net</a><br>
+				<a href="http://www.themeforest.net/user/Pixel-Stuff" target="blank">www.themeforest.net/user/Pixel-Stuff</a></p>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-thumbs-o-up"></i>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Updates -->
+	<section id="updates">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Important note about YouTube video's not running locally</h3>
+				<hr>
+				<p>The YouTube video's probably don't work on your local computer. If you upload your website to a live server, the YouTube video becomes visible.</a>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Getting started -->
+	<section id="getting-started" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Getting started</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#text-editor">Using a text-editor</a></li>
+					<li><a href="#robots">The robots tag</a></li>
+					<li><a href="#choose-index">Choosing an index file</a></li>
+					<li><a href="#setup-index-file">Setting up the index file</a></li>
+					<li><a href="#video-settings">Video settings</a></li>
+					<li><a href="#contact-form">Setting up the contact form</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-file"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Using a text editor -->
+	<section id="text-editor">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Using a text editor</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>First of all, you might want to use a text-editor like Notepad++ (Windows) or TextWrangler (Mac OS) for editing the files so you're more able to see what kind of code you're editing.</p>
+				<p><a href="http://www.notepad-plus-plus.org/download/" target="blank">Download Notepad++</a><br>
+				<a href="http://www.barebones.com/products/textwrangler/download.html" target="blank">Download TextWrangler</a></p>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-file-text-o"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Robots tag -->
+	<section id="robots">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>The robots tag</h3>
+				<hr>
+				<p>Please always make sure to check the robots tag in your HTML files. If you want to learn more about the robots tag, read <a href="http://yoast.com/articles/robots-meta-tags/" target="blank">this guide at Yoast.com</a>.</p>
+				<p class="note">PixelStuff is not responsible for your site not being indexed by search engines.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Choose index -->
+	<section id="choose-index">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Choosing an index file</h3>
+				<hr>
+				<p>There are different index files to choose from. Copy the index file you want and save it as 'index.html'. If you use an 'index[digit].html' file on your server, your website probably isn't visible when you visit yourdomain.com. You <span class="red">don't</span> have to rename the index[digit].<b>js</b> file. But if you do, also make sure to call the new name for this file in your index.html file.</p>
+			</div>
+		</div>
+		<div class="tablerow">
+			<table>
+				<tr>
+					<th class="th10">Name</th>
+					<th class="th35">Desktop</th>
+					<th class="th35">Mobile Devices</th>
+					<th class="th20">Files</th>
+				</tr>
+				<tr>
+					<td>index1.html</td>
+					<td>Intro video controlled by user<br>Before video: Text and background A<br>After video: Logo, menu and background B</td>
+					<td>Intro background<br>Logo, menu and background B are visible</td>
+					<td>ytplayer.css<br>jquery.ytplayer.js<br>index1.js</td>
+				</tr>
+				<tr>
+					<td>index2.html</td>
+					<td>Intro video controlled by user<br>Logo and menu are visible</td>
+					<td>Intro background<br>Logo and menu are visible</td>
+					<td>ytplayer.css<br>jquery.ytplayer.js<br>index2.js</td>
+				</tr>
+				<tr>
+					<td>index3.html</td>
+					<td>Autoplay full body video<br>Logo and menu are visible<br>Small controls at the bottom of the intro screen</td>
+					<td>Intro background<br>Logo and menu are visible</td>
+					<td>ytplayer.css<br>jquery.ytplayer.js<br>index3.js</td>
+				</tr>
+				<tr>
+					<td>index4.html</td>
+					<td>Simple intro background image</td>
+					<td>Idem dito</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>index5.html</td>
+					<td>Fullbody background image</td>
+					<td>Intro background image</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>index6.html</td>
+					<td>Autoplay body background fade</td>
+					<td>One intro background image</td>
+					<td>jquery.bgndgallery.js<br>jquery.bgndgallery.effects.js<br>index6.js</td>
+				</tr>
+				<tr>
+					<td>index7.html</td>
+					<td>Intro background fade or slide with controls</td>
+					<td>One intro background image</td>
+					<td>jquery.bgndgallery.js<br>jquery.bgndgallery.effects.js<br>index7.js</td>
+				</tr>
+				<tr>
+					<td>index8.html</td>
+					<td>Content and background fade or slide with controls</td>
+					<td>Idem dito</td>
+					<td>superslides.css<br>jquery.superslides.min.js<br>index8.js</td>
+				</tr>
+				<tr>
+					<td>index9.html</td>
+					<td>Short fullwidth header</td>
+					<td>Idem dito</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>index10.html</td>
+					<td>Short fullwidth header<br>Autoplay background fade</td>
+					<td>Idem dito</td>
+					<td>jquery.bxslider.min.js<span class="red">*</span><br>index10.js</td>
+				</tr>
+				<tr>
+					<td>index11.html</td>
+					<td>Short fullwidth header<br>Background and content fade or slide with controls and pagination bullets</td>
+					<td>Idem dito</td>
+					<td>jquery.bxslider.min.js<span class="red">*</span><br>index11.js</td>
+				</tr>
+			</table>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<p class="note"><span class="red">*</span> By default this plugin is included in all the files.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Setting up the index file -->
+	<section id="setup-index-file">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Setting up the index file</h3>
+				<hr>
+				<h5>index1.html</h5>
+				<p>With this index file you can show a video and display a different before- and after the video section. In the HTML file you'll find two ID's: <b>show-before</b> and <b>show-after</b>.</p>
+				<p>Show before:</p>
+<div class="code">
+<pre><code>
+&lt;!-- We're going to show this before the movie --&gt;
+&lt;div id="<span>show-before</span>" class="text-white"&gt;
+	&lt;hr&gt;
+
+
+	&lt;!-- Introduction --&gt;
+	&lt;h5 class="bigtext serif italic margin-bottom"&gt;Hello!&lt;/h5&gt;
+	&lt;h1 class="fittext uppercase bold"&gt;Let me tell&lt;br&gt;you a story&lt;/h1&gt;
+
+
+	&lt;!-- Play button for the video --&gt;
+	&lt;a class="play-btn" onclick="jQuery('#video').playYTP()"&gt;
+		&lt;i class="fa fa-play"&gt;&lt;/i&gt;
+	&lt;/a&gt;
+
+
+	&lt;hr&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>Show after:</p>
+<div class="code">
+<pre><code>
+&lt;!-- We're going to show this after the movie and on mobile devices --&gt;
+&lt;div id="<span>show-after</span>" class="text-white"&gt;
+
+	&lt;!-- Logo and text --&gt;
+	&lt;img src="images/magnum-logo-home.png" alt="magnum-logo-home" width="62" height="48"&gt;
+	&lt;h1 class="bigtext letterspace uppercase bold no-margin"&gt;Magnum&lt;/h1&gt;
+	&lt;h6 class="bigtext serif italic margin-bottom"&gt;Premium Stuff&lt;/h6&gt;
+
+	&lt;!-- Home menu --&gt;
+	&lt;ul class="home-menu"&gt;
+		&lt;li&gt;
+			&lt;a href="#work" class="smoothscroll"&gt;
+				&lt;i class="fa fa-briefcase"&gt;&lt;/i&gt;
+				&lt;b&gt;Work&lt;/b&gt;
+				&lt;em&gt;What I've Made&lt;/em&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#about" class="smoothscroll"&gt;
+				&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt;
+				&lt;b&gt;About&lt;/b&gt;
+				&lt;em&gt;Personal Facts&lt;/em&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#services" class="smoothscroll"&gt;
+				&lt;i class="fa fa-star"&gt;&lt;/i&gt;
+				&lt;b&gt;Services&lt;/b&gt;
+				&lt;em&gt;You &amp; Me = Awesome&lt;/em&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="#contact" class="smoothscroll"&gt;
+				&lt;i class="fa fa-glass"&gt;&lt;/i&gt;
+				&lt;b&gt;Contact&lt;/b&gt;
+				&lt;em&gt;Let's Skip the Coffee&lt;/em&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>It's important to leave the names of these ID's as they are. There are no CSS styles attached to them, but the <b>index.js</b> file needs these ID's in order to work.</p>
+				<p>You can display anything you want inside the <b>show-before</b> and <b>show-after</b> ID's as long as you keep the (classname of the) <b>play-btn</b> as it is. Note that the <b>show-after</b> div contains the elements that are visible on mobile devices. At this time of writing YouTube doesn't support this function, so there is a fallback with a background image for these devices.</p>
+				<p>Also make sure to set the <b>img-before</b> and <b>img-after</b> that you'll find below the video controls in the HTML file.</p>
+				<p>If you want more information about setting up the video, read the instructions given in <a href="#video-settings">video settings</a>.</p>
+				<hr>
+				<h5>index2.html</h5>
+				<p>With this index file you can show a video and display for example your logo and the menu. Just like index1.html, your visitors are still in control of playing the video or not. Make sure to leave the classname <b>play-btn-normal</b> as is. There aren't any styles attached to it, but the index2.js file uses this classname in order for the videofunctions to work.</p>
+				<hr>
+				<h5>index3.html</h5>
+				<p>This index file contains an autoplay and muted background video. If your visitor doesn't want to see the background video, there's a little <b>pause</b> button below the introduction screen. If you don't want the users to be in control of this button, simply delete it in your HTML file.</p>
+<div class="code">
+<pre><code>
+&lt;!-- Video controls --&gt;
+&lt;div class="video-controls"&gt;
+	<span>&lt;button onclick="jQuery('#video').pauseYTP()"&gt;&lt;i class="fa fa-pause"&gt;&lt;/i&gt;&lt;/button&gt;</span> <span>&lt;!-- Delete this line to prevent your users from pausing the video --&gt;</span>
+	&lt;button onclick="jQuery('#video').toggleVolume()"&gt;&lt;i class="fa fa-volume-up"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>Of course the same goes for the <b>volume</b> button, however it's recommended that you don't start your website with a maximum volume video, because some people tend to forget that they left their speakers on at volume 1000. They probably want to shut off their browser - and your website - immediately. Result: visitor or client lost.</p>
+				<h5>The transparent background</h5>
+				<p>Because the <b>body</b> of the index3.html file has a class <b>nobg</b> (no background), the backgrounds of some parts are missing, so the background video is visible at those sections. If you don't want this, simply delete the class of the body:</p>
+<div class="code">
+<pre><code>
+&lt;body class="nobg"&gt;
+</code></pre>
+</div>
+				<p>Becomes:</p>
+<div class="code">
+<pre><code>
+&lt;body&gt;
+</code></pre>
+</div>			<hr>
+				<h5>index4.html</h5>
+				<p>This file contains one background image. To setup the background image, simply replace the name of the image the following tag:</p>
+<div class="code">
+<pre><code>
+&lt;!-- Background image --&gt;
+&lt;div style="background-image: url('images/<span>my-fullscreen-background-image.jpg</span>');" class="fullscreen-img"&gt;&lt;/div&gt;
+</code></pre>
+</div>
+				<p>To prevent a poor quality of images it's recommended that your background image is at least 1600x1200px. For more information on high quality images and how to handle it on Retina devices, read <a href="#image-sizes">image sizes</a>.</p>
+				<hr>
+				<h5>index5.html</h5>
+				<p>This file contains one fullbody background image that is visible on multiple parts of the page, because the <b>nobg</b> class is active. There's also a transparent footer on this page.</p>
+				<hr>
+				<h5>index6.html</h5>
+				<p>This file contains an automatic fader of multiple backgrounds on the body of the page. The <b>nobg</b> class is also active.</p>
+				<p>To setup the different background images, open the <b>index6.js</b> file and add the path to the images you want to display:</p>
+<div class="code">
+<pre><code>
+// Fullbody automatic background gallery
+$.mbBgndGallery.buildGallery({
+	containment: "body",
+	timer: 4000,
+	effTimer: 2000,
+	grayScale: false,
+	shuffle: false,
+	preserveWidth: false,
+	images:[
+		"images/your-image.jpg"<span>,</span>
+		"images/another-background.jpg"<span>,</span>
+		"images/and-another-one.jpg" <span>// The last image doesn't need a ',' after the code.</span>
+	],
+	onStart:function(){},
+	onPause:function(){},
+	onPlay:function(opt){},
+	onChange:function(opt,idx){},
+	onNext:function(opt){},
+	onPrev:function(opt){}
+});
+</code></pre>
+</div>
+				<p class="note">Make sure to set a background image in the HTML document (after the home section) for mobile devices.<br>
+				For more information about this plugin and the settings, visit the <a href="https://github.com/pupunzi/jquery.mb.bgndGallery/wiki" target="blank">bgndGallery documentation</a>.</p>
+				<hr>
+				<h5>index7.html</h5>
+				<p>This file contains an introduction background fader with controls. To setup your background images, follow the instructions given at index6.html.</p>
+				<p>By default the images fade, however you can choose between different effects: "slideUp", "slideDown", "slideRight", "slideLeft" and "zoom".</p>
+<div class="code">
+<pre><code>
+// Background gallery with controls
+$.mbBgndGallery.buildGallery({
+	containment: "body",
+	autoStart: false,
+	<span>// effect: "fade", // Default, choose between "slideUp", "slideDown", "slideRight", "slideLeft" and "zoom".</span>
+	effTimer: 1000,
+	controls: "#home-controls",
+	grayScale: false,
+	shuffle: false,
+	preserveWidth: false,
+	images:[
+		"images/your-image.jpg",
+		"images/another-background.jpg",
+		"images/and-another-one.jpg"
+	],
+	onStart:function(){},
+	onPause:function(){},
+	onPlay:function(opt){},
+	onChange:function(opt,idx){},
+	onNext:function(opt){},
+	onPrev:function(opt){}
+});
+</code></pre>
+</div>
+				<p class="note">Make sure to set a background image in the HTML document (after the home section) for mobile devices.<br>
+				For more information about this plugin and the settings, visit the <a href="https://github.com/pupunzi/jquery.mb.bgndGallery/wiki" target="blank">bgndGallery documentation</a>.</p>
+				<hr>
+				<h5>index8.html</h5>
+				<p>This index file contains a background and a content slider with controls. In <b>index8.js</b> we find the following settings for this plugin:</p>
+<div class="code">
+<pre><code>
+// Superslides fullscreen slider
+$('#slides').superslides({
+	// play: 6000,
+	animation: <span>"fade"</span>, // Choose between slide or fade
+	pagination: false // Choose between true or false
+});
+</code></pre>
+</div>
+				<p>If you want to slide the content automatically, remove the '//' before the <code>play: 6000</code> code. If you don't want the arrow controls to be visible, simply delete the following in the index8.html file:</p>
+<div class="code">
+<pre><code>
+&lt;nav class="slides-navigation"&gt;
+	&lt;a class="prev" href="javascript:void(0)"&gt;&lt;/a&gt;
+	&lt;a class="next" href="javascript:void(0)"&gt;&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre>
+</div>
+				<h5 class="red">Important!</h5>
+				<p>If you want to add an image inside the content, for example your logo, you have to add the classname <b>preserve</b> to the image (i.e. your logo) that shouldn't be fullscreen:</p>
+<div class="code">
+<pre><code>
+&lt;img src="images/your-logo.png" alt="your-logo" <span>width="200" height="100" class="preserve"</span>&gt;
+</code></pre>
+</div>
+				<p class="note">For more information about this plugin and the settings, visit the <a href="https://github.com/nicinabox/superslides" target="blank">SuperSlides documentation</a>.</p>
+				<hr>
+				<h5>index9.html</h5>
+				<p>In this file we have a short header with a simple background image. You can change the background image by replacing the placeholder image with your own in the HTML file itself. It's recommended to make this image at least 1600x800px in size to prevent a poor quality. Here you can read more about <a href="#image-sizes">image sizes</a>.</p>
+				<hr>
+				<h5>index10.html</h5>
+				<p>This file contains a short header with an automatic background fader. Add as many images as you want:</p>
+<div class="code">
+<pre><code>
+&lt;!-- The backgrounds --&gt;
+&lt;li&gt;&lt;div style="background-image: url('images/<span>your-image-1.jpg</span>')" class="header"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div style="background-image: url('images/<span>your-image-2.jpg</span>')" class="header"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div style="background-image: url('images/<span>your-image-3.jpg</span>')" class="header"&gt;&lt;/li&gt;
+</code></pre>
+</div>
+				<p class="note">For more information about this plugin and the settings, visit the <a href="http://www.bxslider.com" target="blank">bxSlider documentation</a>.</p>
+				<hr>
+				<h5>index11.html</h5>
+				<p>This file contains a short header with a controlled content and background slider. To change the content and the background of a slide, open the HTML file and change the background image and the text:</p>
+<div class="code">
+<pre><code>	
+&lt;!-- Slide Example --&gt;
+&lt;li&gt;
+	&lt;div style="background-image: url('images/<span>your-image.jpg</span>')" class="header"&gt;
+		&lt;div class="header-center"&gt;
+			&lt;div class="centerdiv text-white"&gt;
+				&lt;hr&gt;
+				&lt;h1 class="bigtext uppercase no-margin"&gt;<span>Your text</span>&lt;/h1&gt;
+				&lt;h6 class="bigtext serif italic"&gt;<span>Et cetera</span>&lt;/h6&gt;
+				&lt;hr&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/li&gt;
+</code></pre>
+</div>
+				<p class="note">For more information about this plugin and the settings, visit the <a href="http://www.bxslider.com" target="blank">bxSlider documentation</a>.</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Video settings -->
+	<section id="video-settings">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Video settings</h3>
+				<hr>
+				<p>Magnum supports YouTube background video's. Setting the background video is easy; simply copy the YouTube url from your browsers address bar and paste it in your HTML file. Example:</p>
+<div class="code">
+<pre><code>
+&lt;!-- Background with youtube video --&gt;
+&lt;div class="video-container"&gt;
+	&lt;a id="video" class="fullscreen-video" data-property="{videoURL:'<span>http://www.youtube.com/watch?v=tDvBwPzJ7dY</span>'}"&gt;The Video&lt;/a&gt;
+&lt;/div>
+</code></pre>
+</div>
+				<h5>Settings</h5>
+				<p>Below you'll find some settings for the background video plugin<span class="red">*</span>. You can use these settings in the <b>index[digit].js</b> files.</p>
+<div class="code">
+<pre><code>
+opacity: 1              // (int) 0 > Set the opacity of the player;
+mute: true              // (boolean) mute the audio;
+showControls: true      // or false If you set the player as background you can show controls adding this parameter;
+ratio: '4/3'            // or '16/9' to set the aspect ratio of the movie;
+quality: 'default'      // or 'small', 'medium', 'large', 'hd720', 'hd1080', 'highres';
+containment: 'body'     // (string) the CSS selector of the DOM element where you want the video background; if not specified it takes the 'body'; if set to 'self' the player will be instanced on that element;
+optimizeDisplay: true   // (boolean) will fit the video size into the window size optimizing the view;
+loop: true              // (boolean) or false loops the movie once ended.
+vol: 100                // 1 to 100 (number) set the volume level of the video.
+startAt: 20             // (int) Set the seconds the video should start at.
+autoplay: true          // (boolean) or false play the video once ready.
+showYTLogo: true        // (boolean) Show or hide the YT logo and the link to the original video URL.
+showControls: true      // (boolean) Show or hide the controls bar at the bottom of the page.
+</code></pre>
+</div>
+			<p class="note"><span class="red">*</span> Source: <a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="blank">YTPlayer documentation</a>
+			<h5 class="red">Important!</h5>
+			<p>At this time of writing YouTube doesn't support background video's on mobile devices. On smartphones and tablets Magnum shows a fallback background image. See also the fallback options at <a href="#choose-index">Choosing an index file</a>.</p>
+			<p>High quality YouTube video's can be the reason of a browser crash on (older) computers that don't support high definition video's. If this is the case, it's recommended that you set <code>quality</code> to <code>'small'</code> or <code>'medium'</code>.</p>
+			<p>It's recommended that you don't use advertisements in your YouTube video's to prevent ad's of other companies on your website.</p>
+			<p class="note">For more information about the plugin, visit the <a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="blank">YTPlayer documentation</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact form -->
+	<section id="contact-form">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to setup the contact form</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<h5>Adding your e-mailaddress</h5>
+				<p>To recieve messages at your own e-mailaddress, go to line 60 in the contact.php file and add your e-mailaddress instead of the fake e-mailaddress. Example:</p>
+<div class="code">
+<pre><code>
+// Configuration option.
+// Enter the email address that you want to emails to be sent to.
+// Example $address = "hello@yourdomain.com";
+
+$address = "<span>your@email.com</span>";
+</code></pre>
+</div>
+				<h5>Changing the 'Thank You' message</h5>
+				<p>To edit the 'Thank You' message that displays after someone sends a message, go to line 89 in contact.php and change the text between the <code>&lt;h4&gt;</code> and <code>&lt;p&gt;</code> tags. Example:</p>
+<div class="code">
+<pre><code>
+// Email has sent successfully, echo a success page.
+
+echo "&lt;fieldset&gt;";
+echo "&lt;div id='success_page'&gt;";
+echo "&lt;h4><span>Email Sent Successfully</span>&lt;/h4&gt;";
+echo "&lt;p><span>Thank you $name, your message has been submitted to us.</span>&lt;/p&gt;";
+echo "&lt;/div&gt;";
+echo "&lt;/fieldset&gt;";
+</code></pre>
+</div>
+				<h5>Required fields</h5>
+				<p>The name, e-mailaddress and comment/message fields are required. If you want the telephone field to be required, go to line 25 in contact.php and uncomment line 25 - 30.</p>
+				<p>To uncomment the code, simply delete the '//' symbols before the code.</p>
+				<p class="note">Note: The contact form requires PHP and doesn't work locally. Please make sure to test your contact form on a server. Also make sure to test the contact form written by an unknown (fake) e-mailaddress. If these e-mails end up in your spam folder, please contact your webhost provider as this is most probably an issue with the server.</p>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-envelope-o"></i>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Typography and Text -->
+	<section id="typography" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Typography &amp; Text</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#change-text">How to change text</a></li>
+					<li><a href="#change-font">How to change the font</a></li>
+					<li><a href="#google-fonts">Using Google Webfonts</a></li>
+					<li><a href="#serif-class">Using the serif class</a></li>
+					<li><a href="#uppercase-class">Using the uppercase class</a></li>
+					<li><a href="#align-text">How to align text</a></li>
+					<li><a href="#fittext">Fit text to the screen</a></li>
+					<li><a href="#margins">Using margins</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-font"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Change text -->
+	<section id="change-text">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to change the text</h3>
+				<hr>
+				<p>1. Open the HTML file with a text editor.<br>
+				2. Edit the text between the <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> and <code>&lt;em&gt;</code> (et cetera) tags, for example:</p>
+<div class="code">
+<pre><code>
+&lt;h1&gt;Magnum&lt;/h1&gt;
+</code></pre>
+</div>
+				<p>becomes</p>
+<div class="code">
+<pre><code>
+&lt;h1&gt;Your name here&lt;/h1&gt;
+</code></pre>
+</div>
+				<p>and</p>
+<div class="code">
+<pre><code>
+&lt;h2&gt;Graphic Design&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+</code></pre>
+</div>
+				<p>becomes</p>
+<div class="code">
+<pre><code>
+&lt;h2&gt;My Service&lt;/h2&gt;
+&lt;p&gt;Your text here.&lt;/p&gt;
+</code></pre>
+</div>
+				<p>3. Save the file and view it in your browser to see the result.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Change font -->
+	<section id="change-font">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to change the font</h3>
+				<hr>
+				<p>1. Open the style.css file in the css folder with a text editor.<br>
+				2. Search for the following text:</p>
+<div class="code">
+<pre><code>
+font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+</code></pre>
+</div>
+				<p>3. Enter the fontname you wish to use. For example:</p>
+<div class="code">
+<pre><code>
+font-family: <span>Georgia, Times, serif</span>;
+</code></pre>
+</div>
+				<p>4. Save the file and view the result in your browser.</p>
+				<p>For more information about font families, visit <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="blank">w3schools.com</a>.</p>
+				<p class="note">Make sure to delete the @import code from the style.css file if you're not planning on using the Open Sans font. See also the <a href="google-fonts">Using Google Webfonts</a> how to.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Google fonts -->
+	<section id="google-fonts">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Using Google Webfonts</h3>
+				<hr>
+				<p>1. Visit <a href="https://www.google.com/fonts/">https://www.google.com/fonts/</a>.<br>
+				2. Choose your favourite font, for example 'Droid Sans'.<br>
+				3. Click the 'Quick use' button. (This is the grey button in the middle. You'll find it at the left of the blue 'Add to Collection' button.)</p>
+				<img src="assets/images/google-font-1.png" alt="google font 1">
+				<p>4. Select the styles of the font you wish to use, for example Normal 400 and Bold 700.<br>
+				5. Copy the code you'll find at the thrid point and the second tab (the @import function) of the Google Webfonts page.</p>
+				<img src="assets/images/google-font-2.png" alt="google font 2">
+				<p>Example given:</p>
+<div class="code">
+<pre><code>
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+</code></pre>
+</div>
+				<p>6. Open your style.css file and add this code on the first line of the document.<br>
+				7. Copy the <code>font-family</code> code given at point 4 of the Google Fonts instructions. Don't forget to add a fallback font after the Google Font:</p>
+<div class="code">
+<pre><code>
+font-family: 'Droid Sans', <span>Helvetica, Arial, sans-serif</span>;
+</code></pre>
+</div>
+				<p>8. Follow the instructions given in <a href="#change-font">How to change the font</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Serif class -->
+	<section id="serif-class">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Using the serif class</h3>
+				<hr>
+				<p>In the Magnum template you'll find a sans-serif and a serif font. The default is sans-serif, and if you'd like to display text in serif, simply use the serif class:</p>
+<div class="code">
+<pre><code>
+&lt;p class=&quot;<span>serif</span>&quot;&gt;Good stuff!&lt;/p&gt;
+</code></pre>
+</div>
+				<p>Or apply the serif class to a container div:</p>
+<div class="code">
+<pre><code>
+&lt;div class="twelve columns <span>serif</span>"&gt;
+	&lt;h1&gt;Heading&lt;/h1&gt;
+	&lt;p&gt;Everything is serif in this div.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>You can also add the <b>italic</b> class to the serif class instead of using the <code>&lt;em&gt;</code> tags.</p>
+				<p>To change the serif class: Hit Command + F or Ctrl + F in the style.css file and look for "serif" so you can easily edit the font of the serif class.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Uppercase class -->
+	<section id="uppercase-class">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Using the uppercase class</h3>
+				<hr>
+				<p>In the Magnum template you'll find some headings displayed in UPPERCASE. You can use the <b>uppercase</b> and <b>no-uppercase</b> class to easily switch styles.
+<div class="code">
+<pre><code>
+&lt;p class=&quot;<span>uppercase</span>&quot;&gt;Good stuff!&lt;/p&gt;
+</code></pre>
+</div>
+			<p>You can also add the <b>bold</b> class to the uppercase class instead of using the <code>&lt;b&gt;</code> tags.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Align text -->
+	<section id="align-text">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to align text</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>By default almost every text on the website is centered. If you want to set a specific text to the left or right, simply add <code>alignleft</code> or <code>alignright</code> inside a row or column.
+				For example:</p>
+<div class="code">
+<pre><code>
+&lt;div class="twelve columns <span>alignleft</span>"&gt;
+	&lt;p&gt;Everything in this div is aligned to the left.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-align-left"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- FitText -->
+	<section id="fittext">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Fit text to the screen</h3>
+				<hr>
+				<p>You can use the fittext class to display text that will automatically scale down to the viewport:</p>
+<div class="code">
+<pre><code>
+&lt;h1 class=&quot;fittext&quot;&gt;This text is min 50px and max 100px and has a css fallback of 75px&lt;/h1&gt;
+&lt;h2 class=&quot;fittext&quot;&gt;This text is min 40px and max 80px and has a css fallback of 60px&lt;/h1&gt;
+&lt;h3 class=&quot;fittext&quot;&gt;This text is min 30px and max 60px and has a css fallback of 45px&lt;/h1&gt;
+&lt;h4 class=&quot;fittext&quot;&gt;This text is min 20px and max 40px and has a css fallback of 30px&lt;/h1&gt;
+&lt;h5 class=&quot;fittext&quot;&gt;This text is min 15px and max 30px and has a css fallback of 23px&lt;/h1&gt;
+&lt;h6 class=&quot;fittext&quot;&gt;This text is min 10px and max 20px and has a css fallback of 15px&lt;/h1&gt;
+</code></pre>
+</div>
+				<p>For more information on using the FitText plugin, see the main.js file and also <a href="http://fittextjs.com/" target="blank">FitTextjs.com</a>.</p>
+				<p>You can also use a CSS only class (bigtext):</p>
+<div class="code">
+<pre><code>
+&lt;h1 class=&quot;bigtext&quot;&gt;CSS&lt;/h1&gt;
+&lt;h2 class=&quot;bigtext&quot;&gt;Media&lt;/h1&gt;
+&lt;h3 class=&quot;bigtext&quot;&gt;Queries&lt;/h1&gt;
+&lt;h4 class=&quot;bigtext&quot;&gt;Can&lt;/h1&gt;
+&lt;h5 class=&quot;bigtext&quot;&gt;Be Very&lt;/h1&gt;
+&lt;h6 class=&quot;bigtext&quot;&gt;Usefull&lt;/h1&gt;
+</code></pre>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Margins -->
+	<section id="margins">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Using margins</h3>
+				<hr>
+				<p>To give you more control over margins and create less or more whitespace between elements, you can apply the following classes to elements:</p>
+<div class="code">
+<pre><code>
+.no-margin {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.margin-all {
+margin: 25px;
+}
+
+.margin {
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.margin-top {
+margin-top: 25px;
+}
+
+.margin-bottom {
+margin-bottom: 25px;
+}
+
+.margin-big {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.margin-all-big {
+margin: 50px;
+}
+
+.margin-top-big {
+margin-top: 50px;
+}
+
+.margin-bottom-big {
+margin-bottom: 50px;
+}
+
+.margin-small {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.margin-all-small {
+margin: 10px;
+}
+
+.margin-top-small {
+margin-top: 10px;
+}
+
+.margin-bottom-small {
+margin-bottom: 10px;
+}
+</code></pre>
+</div>
+				<p>See also the essentials.css file in the css/lib folder.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Links, buttons and icons-->
+	<section id="links-buttons-icons" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Links, Buttons &amp; Icons</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#create-link">How to create a link</a></li>
+					<li><a href="#link-to-point">How to link to a specific point in your file</a></li>
+					<li><a href="#create-icon">How to create an icon</a></li>
+					<li><a href="#create-button">How to create a button</a></li>
+					<li><a href="#icon-inside-button">Adding an icon inside a button</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-anchor"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Create link -->
+	<section id="create-link">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to create a link</h3>
+				<hr>
+				<p>The tags used to produce links are the <code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code>.
+				The <code>&lt;a&gt;</code> tells where the link should start and the <code>&lt;/a&gt;</code> indicates where the link ends.
+				Everything between these two will work as a link.
+				The target of the link is added to the <code>&lt;a&gt;</code> tag using the <code>href=&quot;http://www.domain.com&quot;</code> setting.</p>
+				<p>The example below shows how to make the word here work as a link to Domain.com.</p>
+<div class="code">
+<pre><code>
+Click &lt;a href=&quot;http://www.domain.com&quot;&gt;here&lt;/a&gt; to go to Domain.
+</code></pre>
+</div>
+				<p>You simply:<br>
+				1. Specify the target in the <code>&lt;a href=&quot; &quot;&gt;</code>.<br>
+				2. Then add the text that should work as a link.<br>
+				3. Finally add an <code>&lt;/a&gt;</code> tag to indicate where the link ends.</p>
+				<p><a href="#create-button">Click here for more information about buttons</a>.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Link to point -->
+	<section id="link-to-point">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to link to a specific point in your file</h3>
+				<hr>
+				<p>For this example we're going to use the navigation menu of our website.<br>
+				1. Go to the menu section in the HTML document<br>
+				2. You'll see the following lines:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;#work&quot;&gt;Work&lt;/a&gt;
+&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+&lt;a href=&quot;#services&quot;&gt;Services&lt;/a&gt;
+&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;
+</code></pre>
+</div>
+				<p>For example: The #services links to the services section. Let's take a look at where the content of that section starts:</p>
+<div class="code">
+<pre><code>
+&lt;!-- Services --&gt;
+&lt;section id=&quot;services&quot; class=&quot;services&quot;&gt;
+</code></pre>
+</div>
+				<p>3. The id of this section is 'services'. Whenever we change it to 'myservice', we only have to make sure to change the link in the menu as following:</p>
+<div class="code"><pre>
+<code>
+&lt;a href=&quot;#myservice&quot;&gt;Any text you want&lt;/a&gt;
+</code></pre>
+</div>
+				<p>You can do this for every item, however you don't have to change the classnames (class=&quot;services&quot;) because they're linked with the stylesheets. Changing those names will result in an unstyled section of your website.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Create icon -->
+	<section id="create-icon">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to create an icon</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>Magnum has the Font Awesome (fa) library of fonts inside this template. To place an icon of a home, simply place the following code in your HTML file:</p>
+<div class="code">
+<pre><code>
+&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;
+</code></pre>
+</div>
+				<p>Making a link of it would result in the following code:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#home&quot;&gt;&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+</code></pre>
+</div>
+				<p>If you want to have more whitespace between an unstyled icon and text, use the <b>inline</b> class in the <code>i</code> class tag:
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#home&quot;&gt;&lt;i class=&quot;fa fa-home <span>inline</span>&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+</code></pre>
+</div>
+				<p>To style the icon, you can choose a few pre defined styles: <code>icon small</code>, <code>icon medium</code>, <code>icon</code> and <code>icon big</code>. You can also use the <code>icon huge</code> class to display an icon as a huge graphic element in a column.</p>
+				<p>Code:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#home&quot;&gt;&lt;i class=&quot;fa fa-home icon small&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#home&quot;&gt;&lt;i class=&quot;fa fa-home icon medium&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#home&quot;&gt;&lt;i class=&quot;fa fa-home icon&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#home&quot;&gt;&lt;i class=&quot;fa fa-home icon big&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+</code></pre>
+</div>
+				<p>Result:<br>
+				<a href="#home"><i class="fa fa-home icon small"></i></a>
+				<a href="#home"><i class="fa fa-home icon medium"></i></a>
+				<a href="#home"><i class="fa fa-home icon"></i></a>
+				<a href="#home"><i class="fa fa-home icon big"></i></a></p>
+				<hr>
+				<h5>Styling the icon</h5>
+				<p>To give the icons a specific look, you can add the following classes to it:</p>
+				<p><code>icon</code>: this gives the icon a default dark background;<br>
+				<code>icon color</code>, <code>icon dark</code>, <code>icon light</code>, <code>icon white</code> for icons with a specific background;<br>
+				<code>icon outline</code>, <code>icon outline color</code>, <code>icon outline dark</code>, <code>icon outline light</code>, <code>icon outline white</code> for icons with a border.</p>
+
+				<p>If we want to have a big Facebook icon with a coloured border, this will result in the following code:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;http://www.facebook.com&quot; target=&quot;blank&quot;&gt;&lt;i class=&quot;fa fa-facebook icon big outline color&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+</code></pre>
+</div>
+				<p><a href="http://www.facebook.com" target="blank"><i class="fa fa-facebook icon big outline color"></i></a></p>
+				<p>To view all available icons please visit: <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_blank">Font Awesome cheatsheet</a>.</p>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-home"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Create button -->
+	<section id="create-button">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to create a button</h3>
+				<hr>
+				<p>There are three different sizes of buttons in this template: a small sized button, a normal sized button and a large sized button:</p>
+				<p><a href="#yourlink" class="button small">Click me</a>
+				<a href="#yourlink" class="button">Click me</a>
+				<a href="#yourlink" class="button big">Click me</a>
+				<p>Calling these buttons is simple:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#yourlink&quot; class=&quot;button&quot;&gt;Click me&lt;/a&gt;
+</code></pre>
+</div>
+				<p>Small button:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#yourlink&quot; class=&quot;<span>button small</span>&quot;&gt;Click me&lt;/a&gt;
+</code></pre>
+</div>
+				<p>Big button:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#yourlink&quot; class=&quot;<span>button big</span>&quot;&gt;Click me&lt;/a&gt;
+</code></pre>
+</div>
+				<hr>
+				<h5>Styling the buttons</h5>
+				<p>To give the button a specific style, you can use the same classnames as the <a href="#create-icon">icon styles</a><span class="red">*</span>. For example:</p>
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#take-a-break&quot; class=&quot;button <span>outline dark</span>&quot;&gt;Click!&lt;/a&gt;
+</code></pre>
+</div>
+				<p>Result:<br>
+				<a href="#take-a-break" class="button outline dark">Click!</a></p>
+				<p class="note"><span class="red">*</span> Use 'button' instead of 'icon'.<br>
+				Note that the font of the button is the default font of the style.css file.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Icon inside button -->
+	<section id="icon-inside-button">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Adding an icon inside a button</h3>
+				<hr>
+				<p>To display an icon inside a button, simply add the <code>&lt;i&gt;</code> between the <code>&lt;a&gt;</code> tags:
+<div class="code">
+<pre><code>
+&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;<span>&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;</span> Go home!&lt;/a&gt;
+</code></pre>
+</div>
+				<p>Result:<br>
+				<a href="#" class="button"><i class="fa fa-home"></i> Go home!</a></p>
+				<p>Note: You can find all available icons and their classnames here: <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_blank">Font Awesome cheatsheet</a></p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Colors -->
+	<section id="colors" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Colors</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#main-color">How to choose the main color of your site</a></li>
+					<li><a href="#customize-color">How to customize the main color</a></li>
+					<li><a href="#span-colors">How to use span colors</a></li>
+					<li><a href="#text-background-colors">How to use text background colors</a></li>
+					<li><a href="#background-color">How to set the background color of a section</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-pencil"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Main color -->		
+	<section id="main-color">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to choose the main color of your site</h3>
+				<hr>
+				<p>Magnum comes with different color stylesheets that you can use instead of the default color. Changing the main color of your website is very easy:<br>
+				1. If you want to use your own color: <a href="#customize-color">Customize your color.css file</a><br>
+				2. Open the index.html file (or any other .html file)<br>
+				3. Look for the following lines in the head section:</p>
+<div class="code">
+<pre><code>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+</code></pre>
+</div>
+				<p>5. Place the following line right below the style.css line - In the example below we're going to make the main color of the website orange:</p>
+<div class="code">
+<pre><code>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/colors/orange.css&quot;&gt;
+</code></pre>
+</div>
+				<p>6. Save the file and view the result.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Customize color -->
+	<section id="customize-color">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to customize the main color</h3>
+				<hr>
+				<p>1. If you'd like to choose your own color, copy and open any color.css file.<br>
+				2. Simply replace your color in the color.css file:</p>
+<div class="code">
+<pre><code>
+/* Background color */
+... {
+background: <span>#123ABC</span>;
+}
+
+/* Color */
+... {
+color: <span>#123ABC</span>;
+}
+
+/* Border color */
+... {
+border: 2px solid <span>#123ABC</span>;
+}
+</code></pre>
+</div>
+				<p>3. Make sure you call your color CSS file in the HTML documents below the 'style.css' line. (See also: <a href="#main-color">How to choose the main color for your site</a>.)</p>
+				<p class="note">Note: You can use <a href="http://www.rapidtables.com/web/color/RGB_Color.htm" target="_blank">this tool</a> or software such as Adobe Photoshop to choose a color.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Span colors -->
+	<section id="span-colors">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to use span colors</h3>
+				<hr>
+				<p>In the style.css file you'll find some span style colors to give your text specific colors. Adding these span colors is simple. Example given:</p>
+<div class="code">
+<pre><code>
+&lt;p&gt;This is a text with some <span>&lt;span class=&quot;text-color&quot;&gt;coloured&lt;/span&gt;</span> text in it.&lt;/p&gt;
+</code></pre>
+</div>
+				<p>You can choose between the following span classes:<br>
+				- text-light<br>
+				- text-white<br>
+				- text-dark<br>
+				- text-color</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Text background colors -->
+	<section id="text-background-colors">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to use text background colors</h3>
+				<hr>
+				<p>In the style.css file you'll find some text background colors to give your text specific background colors. Adding these background colors is simple. Example given:</p>
+<div class="code">
+<pre><code>
+&lt;h1 class="text-bg&gt;This is a text with a background color.&lt;/h1&gt;
+</code></pre>
+</div>
+				<p>You can choose between the following span classes:<br>
+				- text-bg - Displays a coloured background, same as text-bg.color<br>
+				- text-bg light<br>
+				- text-bg white<br>
+				- text-bg dark<br>
+				- text-bg color</p>
+				<p class="note">It's recommended that you only use the text-bg class to headings in headers and or sliders.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Background color -->
+	<section id="background-color">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to set the background color of a section</h3>
+				<hr>
+				<p>In this example we're going to edit the background color of the 'social footer' section.</p>
+				<p>1. Open style.css in a text editor.<br>
+				2. Search for 'social footer'. (Command + F, Ctrl + F) You'll see the following code:</p>
+<div class="code">
+<pre><code>
+.social-footer {
+	/*...*/
+	background: <span>#f0f0f0</span>;
+}
+</code></pre>
+</div>
+				<p>3. Simply replace the '#f0f0f0' with your desired color.</p>
+				<p class="note">Note: You can use <a href="http://www.rapidtables.com/web/color/RGB_Color.htm" target="_blank">this tool</a> or software such as Adobe Photoshop to choose a color.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="take-a-break" class="break">
+		<div class="row">
+			<div class="nine columns">
+				<h3>Away for coffee, be right back.</h3>
+				<p>Don't forget to take a break ;)</p>
+			</div>
+			<div class="three columns">
+				<i class="fa fa-coffee"></i>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Media -->
+	<section id="media" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Media</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#display-image">How to display an image</a></li>
+					<li><a href="#your-logo">Your logo</a></li>
+					<li><a href="#image-sizes">Image sizes</a></li>
+					<li><a href="#circle-images">How to create circle images</a></li>
+					<li><a href="#background-images">How to create a background</a></li>
+					<li><a href="#popup">How to display a popup</a></li>
+					<li><a href="#sliders">How to configure a slider</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-picture-o"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- How to display an image -->
+	<section id="display-image">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to display an image</h3>
+				<hr>
+				<p>If you want to display an image on your website with for example dimensions of 1024x768 pixels, you can use the following code:</p>
+<div class="code">
+<pre><code>
+&lt;img src="images/my-image.jpg" width="1024" height="768"&gt;
+</code></pre>
+</div>
+				<p>Magnum is packed with double sized images to provide a high quality look on devices with a higher pixel ratio, such as retina screens. There are several techniques on how to provide the best quality of images for your website on normal and high resolution screens.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Your logo -->
+	<section id="your-logo">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Your logo</h3>
+				<hr>
+				<p>Below you'll find the code to display your logo in the introduction screen. It's recommended to also set the width and height<span class="red">*</span> of your logo to appear on normal screens. In the example below the dimensions of the image are 180 x 140 pixels, so we're adding half the size in the <code>&lt;img&gt;</code> tag.</p>
+<div class="code">
+<pre><code>
+&lt;img src="images/your-logo.png" alt="your-logo" width="90" height="70"&gt;
+</code></pre>
+</div>
+				<p>If you're using the fullscreen content and background slider (index 8 and 9), add the class <b>preserve</b> to your image to avoid a fullscreen logo:</p>
+<div class="code">
+<pre><code>
+&lt;img src="images/your-logo.png" alt="your-logo" width="90" height="70" <span>class="preserve"</span>&gt;
+</code></pre>
+</div>
+				<p>Below you'll find the code for your logo in the menu. The max height of the logo is 30px for the best result. If you don't have a logo, you can also use a typographic logo between the <code>&lt;h1&gt;</code> tags. Make sure to uncomment the <code>&lt;!--</code> and <code>--&gt;</code> codes.</p>
+				<div id="the-logo-class"></div>
+<div class="code">
+<pre><code>
+&lt;!-- Your symbolic or typographic logo here --&gt;
+&lt;a href="#home" class="smoothscroll"&gt;&lt;img src="images/your-menu-logo.png" alt="your-menu-logo" width="xxx" <span>height="30"</span> class="menu-logo"&gt;&lt;/a&gt;
+<span>&lt;!--</span>&lt;h1&gt;&lt;a href="#home" class="smoothscroll"&gt;Your (Company) Name&lt;/a&gt;&lt;/h1&gt;<span>--&gt;</span>
+</code></pre>
+</div>
+				<p class="note"><span class="red">*</span> This goes only for images that are not inside a column. The images inside a column will automatically adapt to the width of a column if they're larger than the column's width itself.</p>
+				<h5 class="red">Note about using a large logo</h5>
+				<p>If you want to display a logo that is over 270px in width, you can use the <b>the-logo</b> class. This class sets the logo to a maximum of 600px and scales with the dimensions of the screen. You can change the width of this class in the style.css file. Hit 'ctrl + f' or 'cmnd + f' and look for 'the-logo'. Here you can set the max-width to the size you want to display your logo.</p>
+				<p>When you're using this class, you can delete the <code>width</code> and <code>height</code> tags in the HTML document, because the CSS class takes care of the dimensions now. Example given:</p>
+<div class="code">
+<pre><code>
+&lt;img src="images/your-logo.png" alt="your-logo" <span>class="the-logo"</span>&gt;
+</code></pre>
+</div>
+				<p>And if you're using index 8 or index 9, you can combine this class with the <b>preserve</b> class:</p>
+<div class="code">
+<pre><code>
+&lt;img src="images/your-logo.png" alt="your-logo" <span>class="preserve the-logo"</span>&gt;
+</code></pre>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Image sizes -->
+	<section id="image-sizes">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Image sizes</h3>
+				<hr>
+				<p>Below you'll find the sizes of the images used in this template:</p>
+			</div>
+		</div>
+		<div class="tablerow">
+			<table>
+				<tr>
+					<th class="th33">Image</th>
+					<th class="th33">Normal size in px</th>
+					<th class="th33">Retina size in px</th>
+				</tr>
+				<tr>
+					<td>Logo introduction <span class="red">*</span></td>
+					<td>62 x 48</td>
+					<td>124 x 96</td>
+				</tr>
+				<tr>
+					<td>Logo menu <span class="red">**</span></td>
+					<td>(38 and) max 30 in height</td>
+					<td>(76 and) max 60 in height</td>
+				</tr>
+				<tr>
+					<td>Fullscreen background</td>
+					<td>1024 x 682.5</td>
+					<td>2048 x 1365</td>
+				</tr>
+				<tr>
+					<td>Header background</td>
+					<td>1024 x 512</td>
+					<td>2048 x 1024</td>
+				</tr>
+				<tr>
+					<td>Thumbnail</td>
+					<td>360 x 360</td>
+					<td>720 x 720</td>
+				</tr>
+				<tr>
+					<td>Employee avatar</td>
+					<td>360 x 360</td>
+					<td>720 x 720</td>
+				</tr>
+				<tr>
+					<td>About me avatar</td>
+					<td>160 x 160</td>
+					<td>320 x 320</td>
+				</tr>
+				<tr>
+					<td>Services slider image</td>
+					<td>360 x 230</td>
+					<td>720 x 460</td>
+				</tr>
+			</table>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<p class="note"><span class="red">*</span> Keep in mind that the logo shouldn't be too large on small screens. Around 240px width on a portrait view smartphone for the best result.<br>
+				<span class="red">**</span> Keep the height of your logo in the menu at &lt; 30px for the best result.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Circle images -->
+	<section id="circle-images">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to create circle images</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>To create a circle images, simply put the 'circle' classname in your img tags. For example:</p>
+<div class="code">
+<pre><code>
+&lt;img src=&quot;images/your-image.jpg&quot; alt=&quot;your-image&quot; <span>class=&quot;circle&quot;</span>&gt;
+</code></pre>
+</div>
+			<p>You can also use the 'rounded' class to create rounded corners on your image.</p>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-bullseye"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Background images -->
+	<section id="background-images">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to create a background image</h3>
+				<hr>
+				<p>To create an area with a background image, you can use the following code for example:</p>
+<div class="code">
+<pre><code>
+&lt;div style="background-image: url('images/your-image.jpg')" class="header"&gt;&lt;/div&gt;
+</code></pre>
+</div>
+				<p>To add text inside this header and center it, add the following code inside the background-image div:</p>
+<div class="code">
+<pre><code>
+&lt;div class="header-center"&gt;
+	&lt;div class="centerdiv text-white"&gt;
+		&lt;h1&gt;Your text&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>The complete code can be something like this:</p>
+<div class="code">
+<pre><code>
+&lt;div style="background-image: url('images/your-image.jpg')" class="header"&gt;
+	&lt;div class="header-center"&gt;
+		&lt;div class="centerdiv text-white"&gt;
+			&lt;h1&gt;Your text&lt;/h1&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<h5 class="red">Note:</h5>
+				<p>Because of the transparent background class, the background of the quote section can be changed in the style.css file around line 1690:</p>
+<div class="code">
+<pre><code>
+.quote .header{
+	background-image: url('../images/<span>your-image.jpg</span>');
+}
+</code></pre>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Popup -->
+	<section id="popup">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to display a popup</h3>
+				<hr>
+				<p>To display a popup, put the 'popup' classname in your a tag. For example:</p>
+<div class="code">
+<pre><code>
+&lt;a class="<span>popup</span>" href="path-to-the-object-that-should-appear-in-the-popup.jpg"&gt;Click here!&lt;/a&gt;
+</code></pre>
+</div>
+				<p>A thumbnail for example:</p>
+<div class="code">
+<pre><code>
+&lt;a class="<span>popup</span>" href="path-to-the-object-that-should-appear-in-the-popup.jpg"&gt;
+	&lt;img src="path-to-the-thumbnail" alt="path to the thumbnail"&gt;
+&lt;/a&gt;
+</code></pre>
+</div>
+				<p>And a portfolio thumbnail for example:</p>
+<div class="code">
+<pre><code>
+&lt;!-- Portfolio thumb 1 --&gt;
+&lt;div class="four columns medium-six columns small-twelve columns <span>portfolio-thumb</span>"&gt;
+	&lt;a class="<span>popup</span>" href="images/720x720-thumbnail.png"&gt;
+		&lt;img src="images/720x720-thumbnail.png" alt="720x720-thumbnail"&gt;
+		&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;
+		&lt;b&gt;Project Title&lt;/b&gt;
+		&lt;em&gt;Simple Popup&lt;/em&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>You can use se the following classes:</p>
+				<h5>popup</h5>
+				<p>Displays an image</p>
+				<h5>popup-image</h5>
+				<p>Displays an image</p>
+				<h5>popup-youtube <span class="red">*</span></h5>
+				<p>For displaying YouTube video's. Example:</p>
+<div class="code">
+<pre><code>
+&lt;a class="popup-youtube" href="http://www.youtube.com/watch?v=RdIh8GiVR9I"&gt;YoutTube video&lt;/a&gt;
+</code></pre>
+</div>
+				<h5>popup-vimeo <span class="red">**</span></h5>
+				<p>For displaying Vimeo video's. Example:</p>
+<div class="code">
+<pre><code>
+&lt;a class="popup-vimeo" href="http://vimeo.com/27973852"&gt;Vimeo video&lt;/a&gt;
+</code></pre>
+</div>
+				<h5>popup-gmaps</h5>
+				<p>To show a Google Map inside a popup. Example:</p>
+<div class="code">
+<pre><code>
+&lt;a class="popup-gmaps" href=""https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom""&gt;Somewhere in London&lt;/a&gt;
+</code></pre>
+</div>
+				<p>For more information about Magnific Popup, please visit <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html" target="blank">the Magnific Popup documentation</a>.</p>
+				<p class="note">Notes:<br>
+				<span class="red">*</span> YouTube video's inside the popup are only visible on a server and don't work locally.<br>
+				<span class="red">**</span> Vimeo video's inside the popup are only visible on a server and don't work locally.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sliders -->
+	<section id="sliders">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to configure a slider</h3>
+				<hr>
+				<p>Below you'll find some jquery codes that explain the working of the slider:</p>
+<div class="code">
+<pre><code>
+// Featured work slider
+$('#featured-work-slider').bxSlider({
+	auto: false, // You can slo set this to true
+	mode: 'fade', // You can also set this to 'horizontal' or 'vertical'
+	pager: true, // To display the bullets below the slider, if you don't want them, simply set this to false
+	controls: true // Set this to false if you don't want to show the controls
+});
+</code></pre>
+</div>
+				<p>If you're slider doesn't work, it's probably because of a missing ',' after a code. See the examples below:</p>
+				<h5>Good:</h5>
+<div class="code">
+<pre><code>
+// Featured work slider
+$('#featured-work-slider').bxSlider({
+	auto: false,
+	mode: 'fade',
+	pager: true,
+	controls: true <span>// The final code doesn't require a '</span>,<span>'</span>
+});
+</code></pre>
+</div>
+				<h5>Bad:</h5>
+<div class="code">
+<pre><code>
+// Featured work slider
+$('#featured-work-slider').bxSlider({
+	auto: false,
+	mode: 'fade' <span>// Oops!</span>
+	pager: true,
+	controls: true, <span>// Oops!</span>
+});
+</code></pre>
+</div>
+				<p>Every slider needs its own ID. So if you want to show - for example - the Featured Work slider twice in your HTML file, make sure to copy the #featured-work-slider into its own ID: #featured-work-slider-two.</p>
+				<p>For more information on how to use the featured work &amp; quote slider, please read <a href="http://www.bxslider.com" target="blank">the documentation of bxSlider</a>.
+				<h5>Services slider</h5>
+				<p>The services slider is made to display a minimum of 3 services next to eachother. If you want to show more services at once, you can also consider the services as displayed within the business.html file.</p>
+				<p>For more information on how to use the services slider, please read <a href="http://docs.dev7studios.com/caroufredsel-old/" target="blank">the documentation of CarouFredsel</a>.
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Grid -->
+	<section id="grid" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Grid</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#the-grid">How to use the grid</a></li>
+					<li><a href="#offset-grid">Offsets in the grid</a></li>
+					<li><a href="#center-grid">Centering the grid</a></li>
+					<li><a href="#responsive-control">More responsive control</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-th"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- The grid -->
+	<section id="the-grid">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>How to use the grid</h3>
+				<hr>
+				<p>The grid is divided by twelve columns and based on the 960 grid system. For a normal use of the grid, you can create a column in a row as following:</p>
+<div class="code">
+<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;four columns&quot;&gt;
+		&lt;p&gt;Your content here&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>This means that the area of the row is one-third of the entire width: 12 / 4 = 3. Example:</p>
+				<div class="example-grid row">
+					<div class="four columns highlight">
+						<p>Your content here</p>
+					</div>
+					<div class="four columns">
+						<p>Four columns</p>
+					</div>
+					<div class="four columns">
+						<p>Four columns</p>
+					</div>
+				</div>
+				<br class="clear">
+				<p>Another example: If you write six columns, this means the width of that area is half of the entire width of the document.</p>
+				<div class="example-grid row">
+					<div class="six columns highlight">
+						<p>Six columns</p>
+					</div>
+					<div class="six columns">
+						<p>Six columns</p>
+					</div>
+				</div>
+				<br class="clear">
+			</div>
+		</div>
+	</section>
+
+	<!-- Offset grid -->
+	<section id="offset-grid">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Offsets in the grid</h3>
+				<hr>
+				<p>If you want to offset a column, simply add 'offset-by-number' (any number between one and eleven) after the columns class. Example given:</p>
+<div class="code">
+<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;ten columns <span>offset-by-two</span>&quot;&gt;
+		&lt;p&gt;Your content here&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>This would result in the following example:</p>
+				<div class="example-grid row">
+					<div class="ten columns offset-by-two highlight">
+						<p>Your content here</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Center grid -->
+	<section id="center-grid">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Centering the grid</h3>
+				<hr>
+				<p>If you want a column to be centered, simply add 'center' after the columns class. Example given:</p>
+<div class="code">
+<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;six columns <span>center</span>&quot;&gt;
+		&lt;p&gt;Your content here&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>This would result in the following example:</p>
+				<div class="example-grid">
+					<div class="six columns center highlight">
+						<p>Your content here</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Responsive control -->
+	<section id="responsive-control">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>More responsive control</h3>
+				<hr>
+				<p>To give you more control over how you're columns are displaying on different devices, you can add 'tablet-', 'medium-' and 'small-' classnames. For example:</p>
+<div class="code">
+<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;<span>four columns tablet-six columns medium-six columns small-twelve columns</span>&quot;&gt;
+		&lt;p&gt;Your content here&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>This would result in the following example:</p>
+				<div class="example-grid row">
+					<div class="four columns tablet-six columns medium-six columns small-twelve columns highlight">
+						<p>Your content here</p>
+					</div>
+					<div class="four columns tablet-six columns medium-six columns small-twelve columns">
+						<p>Your content here</p>
+					</div>
+					<div class="four columns tablet-six columns medium-six columns small-twelve columns">
+						<p>Your content here</p>
+					</div>
+				</div>
+				<br class="clear">
+				<p class="note">Notes:<br>
+				Although you can display multiple columns on a small screen, it's recommended that you don't use more than four columns in a row on a small device.<br>
+				You can't use the 'offset' and 'center' classes to the 'tablet-', 'medium-' and 'small-' classes.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Other settings -->
+	<section id="other-settings" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>Other Settings</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#project-page">Project page</a></li>
+					<li><a href="#404-page">404 page</a></li>
+					<li><a href="#custom-title">Custom title settings</a></li>
+					<li><a href="#transparent-background">Transparent background</a></li>
+					<li><a href="#menu-colours">Menu colours</a></li>
+					<li><a href="#footer-styles">Footer styles</a></li>
+					<li><a href="#smoothscroll">Smooth scroll</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-magic"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Project page -->
+	<section id="project-page">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Project page</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>Magnum is included with a special project page to show more details of your work. You can duplicate this HTML file as much as you want for every project. The ID of the slider can always remain the same, unless you want to display the slider multiple times on one page. If that's the case, make sure to give each featured-work-slider its own ID.</p>
+				<p>You'll notice the menu is slightly different than the menu on the main index files, because we have to link back to the index.html file. If you made adjustments in your main menu on the index.html file, and you want to copy the menu into your projectpage HTML file, make sure to link back to the index.html file and don't include the <b>smoothscroll</b> class.</p>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-file"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- 404 page -->
+	<section id="404-page">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>404 page</h3>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>Magnum is included with a special 404 page for your website's visitors who are lost (on your site). The 404 page has it's own CSS styles that you'll find in the style.css file.</p>
+				<p>There is no need for the 404 page to be indexed, so in your head tags, you can set the tag as follows:</p>
+<div class="code">
+<pre><code>
+&lt;!-- Let's not index this page --&gt;
+&lt;meta name="robots" content="noindex, nofollow"&gt;
+</code></pre>
+</div>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-file"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Custom title settings -->
+	<section id="custom-title">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Custom title settings</h3>
+				<hr>
+				<p>You can display a border below the titles of the sections or an icon behind the title. Make sure to add the <code>&lt;hr&gt;</code> that displays the border <b>after</b> the title and the <code>&lt;i&gt;</code> that displays the icon <b>before</b> the title.</p>
+				<p>Border:</p>
+<div class="code">
+<pre><code>
+&lt;!-- The title with a border below --&gt;
+&lt;div class="title"&gt;
+	&lt;h1&gt;Hello Dolly&lt;/h1&gt;
+	<span>&lt;hr&gt;</span>
+&lt;/div&gt;
+</code></pre>
+</div>
+				<p>Icon:</p>
+<div class="code">
+<pre><code>
+&lt;!-- The title with an icon behind --&gt;
+&lt;div class="title"&gt;
+	<span>&lt;i class="fa fa-bolt"&gt;&lt;/i&gt;</span>
+	&lt;h1&gt;Hello Dolly&lt;/h1&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Transparent background -->
+	<section id="transparent-background">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Transparent background</h3>
+				<p>Because the <b>body</b> of certain index files (for example index3.html) have a class <b>nobg</b> (no background), the backgrounds of some parts are missing, so the background video or image is visible at those sections. If you don't want this, simply delete the class of the body:</p>
+<div class="code">
+<pre><code>
+&lt;body class="nobg"&gt;
+</code></pre>
+</div>
+				<p>Becomes:</p>
+<div class="code">
+<pre><code>
+&lt;body&gt;
+</code></pre>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Menu colours -->
+	<section id="menu-colours">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Menu colours</h3>
+				<hr>
+				<p>By default the main menu has a dark background. If you want the background to be white, add the <b>white-menu</b> class to it:</p>
+<div class="code">
+<pre><code>
+&lt;!-- Menu --&gt;
+&lt;div class="main-menu <span>white-menu</span> fixedmenu"&gt;
+</code></pre>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer styles -->
+	<section id="footer-styles">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Footer styles</h3>
+				<hr>
+				<p>Magnum is included with 3 footer styles. The large social footer and the credits section are also working with the transparent background if the body class is set to <b>nobg</b>. See the different index[digit] files to choose the desired footer style and copy it into your index.html file.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Smoothscroll -->
+	<section id="smoothscroll">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Smoothscroll</h3>
+				<hr>
+				<p>When you click a link or button inside the page, you'll notice the page automatic scrolls to the target. If you want to create this effect, simply add the <b>smoothscroll</b> class to the anchor tag.</p>
+<div class="code">
+<pre><code>
+&lt;p&gt;&lt;a href="#contact" class="button <span>smoothscroll</span>"&gt;Get in touch&lt;/a&gt;&lt;/p&gt;
+</code></pre>
+</div>
+				<p class="note">When you apply the smoothscroll class to a link that can't be targeted in the same HTML file, the link doesn't work and the smoothscroll class needs to be removed.</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- General info -->
+	<section id="general-information" class="chapterbg">
+		<div class="row">
+			<div class="twelve columns">
+				<h2>General information</h2>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<ul class="chapter-menu">
+					<li><a href="#need-help">Need help?</a></li>
+					<li><a href="#report-a-bug">Report a bug</a></li>
+					<li><a href="#credits">Credits</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon chapter">
+				<i class="fa fa-info-circle"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Need help -->
+	<section id="need-help">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Need help?</h3>
+				<hr>
+			</div>
+			<div class="nine columns">
+				<p>If you need help with setting up the template, please <a href="mailto:pixelstuff.net@gmail.com">send me an e-mail</a>. There are a few notes:</p>
+				<ul class="arrowlist">
+					<li>Before you ask a question please make sure to scan the menu and read the specific section of your question.</li>
+					<li>If it's a specific HTML question, Google (or any other search engine) is your friend and probably a hundred times faster in replying.</li>
+					<li>If it's possible, please provide a link to your (demo) website so I'm able to quickly scan for possible issues.</li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-ambulance"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Report a bug -->
+	<section id="report-a-bug">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Report a bug</h3>
+				<hr>
+			</div>
+			<div class="nine columns">
+				<p>If you found a bug, please <a href="mailto:pixelstuff.net@gmail.com">send me an e-mail</a> with a (small) description of the issue. Your help is always apreciated.</p>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-bug"></i>
+			</div>
+		</div>
+	</section>
+
+	<!-- Credits -->
+	<section id="credits">
+		<div class="row">
+			<div class="twelve columns">
+				<h3>Credits</h3>
+				<hr>
+			</div>
+			<div class="nine columns">
+				<h5>Images</h5>
+				<ul class="arrowlist">
+					<li><a href="http://www.unsplash.com" target="blank">Unsplash.com</a></li>
+					<li><a href="http://www.flickr.com/photos/needoptic" target="blank">Aurimas Adomavicius </a></li>
+					<li><a href="http://www.flickr.com/photos/newdimensionfilms/" target="blank">John Lemieux</a></li>
+					<li><a href="http://www.flickr.com/photos/ag2r" target="blank">Angelo Gonz&aacute;lez</a></li>
+					<li><a href="http://photodune.net/user/ollyi" target="blank">Ollyi</a></li>
+				</ul>
+				<h5>Fonts</h5>
+				<ul class="arrowlist">
+					<li><a href="http://fortawesome.github.io/Font-Awesome/" target="blank">Font Awesome icons</a></li>
+					<li>Open Sans</li>
+					<li>Montserrat</li>
+				</ul>
+				<h5>Codes &amp; Plugins</h5>
+				<ul class="arrowlist">
+					<li><a href="http://www.jquery.com" target="blank">jQuery</a></li>
+					<li><a href="http://www.bxslider.com" target="blank">bxSlider</a></li>
+					<li><a href="http://docs.dev7studios.com/caroufredsel-old/" target="blank">CarouFredSel</a></li>
+					<li><a href="http://fittextjs.com/" target="blank">FitText</a></li>
+					<li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="blank">Magnific Popup</a></li>
+					<li><a href="http://github.com/pupunzi/jquery.mb.YTPlayer" target="blank">YTPlayer</a></li>
+					<li><a href="http://github.com/pupunzi/jquery.mb.bgndGallery" target="blank">bgndGallery</a></li>
+					<li><a href="http://github.com/nicinabox/superslides" target="blank">SuperSlides</a></li>
+					<li><a href="http://codecanyon.net/item/ajax-contact-form/50846" target="blank">AJAX Contact Form</a></li>
+				</ul>
+			</div>
+			<div class="three columns doc-icon">
+				<i class="fa fa-trophy"></i>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="footer">
+		<div class="row">
+			<div class="twelve columns">
+				<h5>The End.</h5>
+				<p>Thank you again and have fun with Magnum.</p>
+				<p class="small"><a href="http://www.pixelstuff.net" target="blank">www.pixelstuff.net</a><br>
+				<a href="http://www.themeforest.net/user/Pixel-Stuff" target="blank">www.themeforest.net/user/Pixel-Stuff</a></p>
+				<p class="small">&copy; PixelStuff - All Rights Reserved</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Javascript -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
